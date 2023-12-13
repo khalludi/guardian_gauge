@@ -3,7 +3,6 @@ import {Effect, PolicyStatement} from "aws-cdk-lib/aws-iam";
 import {TableV2} from "aws-cdk-lib/aws-dynamodb";
 import {Stack} from "aws-cdk-lib";
 
-
 type Props = {
   scope: Stack;
   table: TableV2

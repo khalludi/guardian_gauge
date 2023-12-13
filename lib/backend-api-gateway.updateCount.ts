@@ -17,6 +17,7 @@ export const handler = async (event: APIGatewayProxyEvent) => {
   let statusCode = 200;
   const headers = {
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
   };
   const decrement = event.queryStringParameters?.operation === "decrement";
 
